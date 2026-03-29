@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "id": "utility",
+      "name": "实用工具",
+      "description": "通用辅助工具，提高工作效率",
+      "icon": "🔧"
+    },
+    {
+      "id": "development",
+      "name": "开发辅助",
+      "description": "编程开发相关的辅助技能",
+      "icon": "💻"
+    },
+    {
+      "id": "testing",
+      "name": "测试相关",
+      "description": "测试框架、测试工具和测试最佳实践",
+      "icon": "🧪"
+    },
+    {
+      "id": "deployment",
+      "name": "部署运维",
+      "description": "CI/CD、容器化、云服务和运维工具",
+      "icon": "🚀"
+    },
+    {
+      "id": "documentation",
+      "name": "文档生成",
+      "description": "README、API文档、变更日志生成工具",
+      "icon": "📄"
+    },
+    {
+      "id": "design",
+      "name": "UI/UX 设计",
+      "description": "界面设计、用户体验和无障碍相关",
+      "icon": "🎨"
+    }
+  ]
+}

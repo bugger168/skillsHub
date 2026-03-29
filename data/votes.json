@@ -1,0 +1,48 @@
+{
+  "skills": {
+    "find-skills-custom": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "code-review": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "debugging": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "python": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "frontend-design": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "test-driven-development": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "security-review": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    },
+    "git-workflow": {
+      "votes": 0,
+      "voters": [],
+      "lastUpdated": "2026-03-30T00:00:00.000Z"
+    }
+  },
+  "meta": {
+    "version": "1.0.0",
+    "description": "技能投票数据存储"
+  }
+}
