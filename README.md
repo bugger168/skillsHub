@@ -14,12 +14,60 @@
 skillsHub/
 ├── SKILL.md                         # 技能仓库索引
 ├── skills/                          # 技能目录
-│   └── find-skills-custom/
-│       └── SKILL.md                 # 技能定义
-├── data/                            # 数据目录（可选）
+│   ├── code-review/SKILL.md
+│   ├── debugging/SKILL.md
+│   ├── frontend-design/SKILL.md
+│   ├── git-workflow/SKILL.md
+│   ├── python/SKILL.md
+│   ├── security-review/SKILL.md
+│   └── test-driven-development/SKILL.md
+├── data/
 │   └── votes.json                   # 投票数据
 ├── README.md                        # 说明文档
 └── categories.json                  # 分类定义
+```
+
+## 技能列表
+
+| 技能 | 分类 | 描述 |
+|-----|------|------|
+| code-review | utility | 代码审查 - 质量与安全 |
+| debugging | utility | 系统化调试方法论 |
+| git-workflow | utility | Git工作流管理 |
+| python | development | Python开发最佳实践 |
+| security-review | development | 安全漏洞审查 |
+| frontend-design | design | 前端界面设计 |
+| test-driven-development | testing | 测试驱动开发 (TDD) |
+
+## 如何安装技能
+
+由于 `npx skills` CLI 不支持 Gitee，请使用以下方法安装：
+
+### 方法 1: 让 Claude 直接安装（推荐）
+
+在 Claude Code 中说："帮我安装 frontend-design 技能"，Claude 会自动完成安装。
+
+### 方法 2: 手动安装
+
+```bash
+# 1. 克隆仓库到临时目录
+git clone https://gitee.com/ai-coding-id/skillsHub.git /tmp/skillsHub-temp --depth 1
+
+# 2. 复制技能到 Claude skills 目录
+mkdir -p ~/.claude/skills/<skill-name>
+cp /tmp/skillsHub-temp/skills/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/SKILL.md
+
+# 3. 清理临时目录
+rm -rf /tmp/skillsHub-temp
+```
+
+### 示例：安装 frontend-design
+
+```bash
+git clone https://gitee.com/ai-coding-id/skillsHub.git /tmp/skillsHub-temp --depth 1
+mkdir -p ~/.claude/skills/frontend-design
+cp /tmp/skillsHub-temp/skills/frontend-design/SKILL.md ~/.claude/skills/frontend-design/SKILL.md
+rm -rf /tmp/skillsHub-temp
 ```
 
 ## 技能元数据格式
@@ -30,12 +78,9 @@ skillsHub/
 ---
 name: skill-name                    # 技能名称（必填）
 description: 技能描述                # 简短描述（必填）
-author: 作者名                      # 作者（必填）
-version: 1.0.0                      # 版本号
-install_count: 0                    # 安装次数
 votes: 0                            # 投票数
 category: utility                   # 分类
-source: owner/repo                  # 来源仓库
+source: ai-coding-id/skillsHub      # 来源仓库
 ---
 ```
 
@@ -50,22 +95,13 @@ source: owner/repo                  # 来源仓库
 | documentation | 文档生成 | README、文档工具 |
 | design | UI/UX 设计 | 界面设计和无障碍 |
 
-## 如何使用
-
-1. Fork 或克隆本仓库
-2. 推送到你的 GitHub
-3. 在 Claude Code 中安装技能：
-
-```bash
-npx skills add your-username/skillsHub@skill-name -g -y
-```
-
 ## 如何添加新技能
 
 1. 在 `skills/` 目录下创建新的技能文件夹
 2. 编写 `SKILL.md` 文件
 3. 更新根目录 `SKILL.md` 的技能列表
-4. 推送到 GitHub
+4. 更新 `data/votes.json` 添加投票记录
+5. 推送到 Gitee
 
 ## 后续优化计划
 
