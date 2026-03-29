@@ -3,7 +3,7 @@ name: skills-hub
 description: 自定义技能仓库 - 支持投票和分类功能
 author: haidoon
 version: 1.0.0
-source: haidoon/skillsHub
+source: ai-coding-id/skillsHub
 ---
 
 # Skills Hub
@@ -53,7 +53,7 @@ npx skills add haidoon/skillsHub@skill-name -g -y
    description: 技能描述
    votes: 0
    category: utility|development|testing|deployment|documentation|design
-   source: haidoon/skillsHub
+   source: ai-coding-id/skillsHub
    ---
    ```
 3. 更新本索引文件的技能列表

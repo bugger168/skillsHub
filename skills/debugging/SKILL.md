@@ -4,7 +4,7 @@ description: Systematically debug code issues using proven methodologies. Use wh
 allowed-tools: Read Grep Glob Bash
 votes: 0
 category: utility
-source: haidoon/skillsHub
+source: ai-coding-id/skillsHub
 metadata:
   tags: debugging, troubleshooting, error-analysis, bug-fixing, problem-solving
   platforms: Claude, ChatGPT, Gemini

@@ -3,7 +3,7 @@ name: python
 description: Python development guidelines and best practices. Use when working with Python code.
 votes: 0
 category: development
-source: haidoon/skillsHub
+source: ai-coding-id/skillsHub
 ---
 
 # Python Guidelines

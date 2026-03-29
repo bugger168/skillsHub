@@ -4,7 +4,7 @@ description: Conduct thorough, constructive code reviews for quality and securit
 allowed-tools: Read Grep Glob
 votes: 0
 category: utility
-source: haidoon/skillsHub
+source: ai-coding-id/skillsHub
 metadata:
   tags: code-review, code-quality, security, best-practices, PR-review
   platforms: Claude, ChatGPT, Gemini

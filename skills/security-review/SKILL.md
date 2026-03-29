@@ -4,7 +4,7 @@ description: Security code review for vulnerabilities. Use when asked to "securi
 allowed-tools: Read, Grep, Glob, Bash, Task
 votes: 0
 category: development
-source: haidoon/skillsHub
+source: ai-coding-id/skillsHub
 license: LICENSE
 ---
 
