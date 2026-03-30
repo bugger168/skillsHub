@@ -7,25 +7,7 @@
 - 自定义技能仓库，可托管你自己的技能
 - 投票功能：记录每个技能的受欢迎程度
 - 分类功能：按类别组织技能便于查找
-
-## 仓库结构
-
-```
-skillsHub/
-├── SKILL.md                         # 技能仓库索引
-├── skills/                          # 技能目录
-│   ├── code-review/SKILL.md
-│   ├── debugging/SKILL.md
-│   ├── frontend-design/SKILL.md
-│   ├── git-workflow/SKILL.md
-│   ├── python/SKILL.md
-│   ├── security-review/SKILL.md
-│   └── test-driven-development/SKILL.md
-├── data/
-│   └── votes.json                   # 投票数据
-├── README.md                        # 说明文档
-└── categories.json                  # 分类定义
-```
+- 兼容 `npx skills` CLI
 
 ## 技能列表
 
@@ -39,35 +21,49 @@ skillsHub/
 | frontend-design | design | 前端界面设计 |
 | test-driven-development | testing | 测试驱动开发 (TDD) |
 
-## 如何安装技能
+## 如何使用
 
-由于 `npx skills` CLI 不支持 Gitee，请使用以下方法安装：
-
-### 方法 1: 让 Claude 直接安装（推荐）
-
-在 Claude Code 中说："帮我安装 frontend-design 技能"，Claude 会自动完成安装。
-
-### 方法 2: 手动安装
+### 列出可用技能
 
 ```bash
-# 1. 克隆仓库到临时目录
-git clone https://gitee.com/ai-coding-id/skillsHub.git /tmp/skillsHub-temp --depth 1
-
-# 2. 复制技能到 Claude skills 目录
-mkdir -p ~/.claude/skills/<skill-name>
-cp /tmp/skillsHub-temp/skills/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/SKILL.md
-
-# 3. 清理临时目录
-rm -rf /tmp/skillsHub-temp
+npx skills add https://gitee.com/ai-coding-id/skillsHub.git --list --full-depth
 ```
 
-### 示例：安装 frontend-design
+### 安装特定技能
 
 ```bash
-git clone https://gitee.com/ai-coding-id/skillsHub.git /tmp/skillsHub-temp --depth 1
-mkdir -p ~/.claude/skills/frontend-design
-cp /tmp/skillsHub-temp/skills/frontend-design/SKILL.md ~/.claude/skills/frontend-design/SKILL.md
-rm -rf /tmp/skillsHub-temp
+npx skills add https://gitee.com/ai-coding-id/skillsHub.git --skill <skill-name> -g -y --full-depth
+```
+
+**示例 - 安装 frontend-design:**
+```bash
+npx skills add https://gitee.com/ai-coding-id/skillsHub.git --skill frontend-design -g -y --full-depth
+```
+
+### 安装所有技能
+
+```bash
+npx skills add https://gitee.com/ai-coding-id/skillsHub.git --all --full-depth
+```
+
+## 仓库结构
+
+```
+skillsHub/
+├── SKILL.md                              # 技能仓库索引
+├── .well-known/agent-skills/index.json   # Skills CLI 索引
+├── skills/                               # 技能目录
+│   ├── code-review/SKILL.md
+│   ├── debugging/SKILL.md
+│   ├── frontend-design/SKILL.md
+│   ├── git-workflow/SKILL.md
+│   ├── python/SKILL.md
+│   ├── security-review/SKILL.md
+│   └── test-driven-development/SKILL.md
+├── data/
+│   └── votes.json                        # 投票数据
+├── README.md                             # 说明文档
+└── categories.json                       # 分类定义
 ```
 
 ## 技能元数据格式
