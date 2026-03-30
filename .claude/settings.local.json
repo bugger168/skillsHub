@@ -24,7 +24,10 @@
       "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find code)",
       "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find)",
       "Bash(echo:*)",
-      "Bash(export SKILLS_API_URL=http://localhost:3000)"
+      "Bash(export SKILLS_API_URL=http://localhost:3000)",
+      "Bash(SKILLS_API_URL=http://localhost:3000 node -e \"console.log\\(''SKILLS_API_URL:'', process.env.SKILLS_API_URL\\)\")",
+      "Bash(npx clear-npx-cache:*)",
+      "Bash(/dev/null echo:*)"
     ]
   }
 }

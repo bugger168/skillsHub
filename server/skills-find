@@ -1,0 +1,3 @@
+#!/bin/bash
+# SkillsHub Find - 使用本地 API 搜索技能
+SKILLS_API_URL=http://localhost:3000 npx skills find "$@"
