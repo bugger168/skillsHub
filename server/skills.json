@@ -1,0 +1,53 @@
+{
+  "skills": [
+    {
+      "id": "skillsHub/code-review",
+      "name": "code-review",
+      "description": "代码审查 - 质量与安全",
+      "installs": 100,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/debugging",
+      "name": "debugging",
+      "description": "系统化调试方法论",
+      "installs": 85,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/git-workflow",
+      "name": "git-workflow",
+      "description": "Git工作流管理",
+      "installs": 120,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/python",
+      "name": "python",
+      "description": "Python开发最佳实践",
+      "installs": 200,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/security-review",
+      "name": "security-review",
+      "description": "安全漏洞审查",
+      "installs": 75,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/frontend-design",
+      "name": "frontend-design",
+      "description": "前端界面设计",
+      "installs": 150,
+      "source": "skillsHub"
+    },
+    {
+      "id": "skillsHub/test-driven-development",
+      "name": "test-driven-development",
+      "description": "测试驱动开发 (TDD)",
+      "installs": 180,
+      "source": "skillsHub"
+    }
+  ]
+}

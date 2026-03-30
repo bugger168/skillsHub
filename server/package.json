@@ -1,0 +1,15 @@
+{
+  "name": "skillshub-server",
+  "version": "1.0.0",
+  "description": "SkillsHub API Server - Deploy in private network",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["skills", "api", "claude"],
+  "license": "MIT"
+}

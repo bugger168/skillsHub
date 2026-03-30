@@ -15,7 +15,11 @@
       "Bash(echo 'no .skills config' ls -la ~/.config/skills*)",
       "Bash(SKILLS_REGISTRY=https://gitee.com/ai-coding-id/skillsHub npx skills find test)",
       "Bash(npm view:*)",
-      "Bash(git clone:*)"
+      "Bash(git clone:*)",
+      "Bash(npm install:*)",
+      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find python)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(taskkill //F //IM node.exe)"
     ]
   }
 }
