@@ -1,0 +1,46 @@
+{
+  "skills": [
+    {
+      "id": "ai-coding-id/skillsHub/code-review",
+      "name": "code-review",
+      "installs": 100,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/debugging",
+      "name": "debugging",
+      "installs": 85,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/git-workflow",
+      "name": "git-workflow",
+      "installs": 120,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/python",
+      "name": "python",
+      "installs": 200,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/security-review",
+      "name": "security-review",
+      "installs": 75,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/frontend-design",
+      "name": "frontend-design",
+      "installs": 150,
+      "source": "ai-coding-id/skillsHub"
+    },
+    {
+      "id": "ai-coding-id/skillsHub/test-driven-development",
+      "name": "test-driven-development",
+      "installs": 180,
+      "source": "ai-coding-id/skillsHub"
+    }
+  ]
+}

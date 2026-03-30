@@ -13,7 +13,9 @@
       "Bash(npm cache:*)",
       "Bash(echo 'checking npm cache' ls -la ~/.skills*)",
       "Bash(echo 'no .skills config' ls -la ~/.config/skills*)",
-      "Bash(SKILLS_REGISTRY=https://gitee.com/ai-coding-id/skillsHub npx skills find test)"
+      "Bash(SKILLS_REGISTRY=https://gitee.com/ai-coding-id/skillsHub npx skills find test)",
+      "Bash(npm view:*)",
+      "Bash(git clone:*)"
     ]
   }
 }

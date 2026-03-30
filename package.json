@@ -1,0 +1,14 @@
+{
+  "name": "skillshub",
+  "version": "1.0.0",
+  "description": "SkillsHub CLI - Custom skills finder for Claude Code",
+  "bin": {
+    "skillshub": "./bin/skillshub.js"
+  },
+  "keywords": ["skills", "claude", "claude-code", "ai"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/ai-coding-id/skillsHub.git"
+  }
+}

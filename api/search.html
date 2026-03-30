@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkillsHub API</title>
+</head>
+<body>
+<script>
+// SkillsHub Search API - GitHub Pages compatible
+const skills = [
+  {
+    "id": "ai-coding-id/skillsHub/code-review",
+    "name": "code-review",
+    "installs": 100,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/debugging",
+    "name": "debugging",
+    "installs": 85,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/git-workflow",
+    "name": "git-workflow",
+    "installs": 120,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/python",
+    "name": "python",
+    "installs": 200,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/security-review",
+    "name": "security-review",
+    "installs": 75,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/frontend-design",
+    "name": "frontend-design",
+    "installs": 150,
+    "source": "ai-coding-id/skillsHub"
+  },
+  {
+    "id": "ai-coding-id/skillsHub/test-driven-development",
+    "name": "test-driven-development",
+    "installs": 180,
+    "source": "ai-coding-id/skillsHub"
+  }
+];
+
+// Handle search request
+const params = new URLSearchParams(window.location.search);
+const query = params.get('q') || '';
+const limit = parseInt(params.get('limit') || '10');
+
+if (query) {
+  const filtered = skills
+    .filter(s => s.name.includes(query.toLowerCase()) || s.id.toLowerCase().includes(query.toLowerCase()))
+    .slice(0, limit);
+
+  document.body.textContent = JSON.stringify({ skills: filtered });
+} else {
+  document.body.textContent = JSON.stringify({ skills: skills.slice(0, limit) });
+}
+</script>
+</body>
+</html>
