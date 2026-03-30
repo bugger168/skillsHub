@@ -1,0 +1,13 @@
+{
+  "name": "skillshub-cli",
+  "version": "1.0.0",
+  "description": "SkillsHub CLI - Custom skills finder with local API support",
+  "bin": {
+    "sh-find": "./bin/sh-find.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  },
+  "keywords": ["skills", "claude", "cli"],
+  "license": "MIT"
+}
