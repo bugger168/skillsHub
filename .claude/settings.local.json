@@ -20,7 +20,11 @@
       "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find python)",
       "Bash(pkill -f \"node server.js\")",
       "Bash(taskkill //F //IM node.exe)",
-      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find test 2>&1)"
+      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find test 2>&1)",
+      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find code)",
+      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find)",
+      "Bash(echo:*)",
+      "Bash(export SKILLS_API_URL=http://localhost:3000)"
     ]
   }
 }
