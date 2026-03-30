@@ -19,7 +19,8 @@
       "Bash(npm install:*)",
       "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find python)",
       "Bash(pkill -f \"node server.js\")",
-      "Bash(taskkill //F //IM node.exe)"
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(SKILLS_API_URL=http://localhost:3000 npx skills find test 2>&1)"
     ]
   }
 }
