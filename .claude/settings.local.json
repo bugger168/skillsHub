@@ -4,7 +4,16 @@
       "WebFetch(domain:skills.sh)",
       "WebSearch",
       "Bash(curl:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(npx skills:*)",
+      "Bash(where skills:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm show:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm cache:*)",
+      "Bash(echo 'checking npm cache' ls -la ~/.skills*)",
+      "Bash(echo 'no .skills config' ls -la ~/.config/skills*)",
+      "Bash(SKILLS_REGISTRY=https://gitee.com/ai-coding-id/skillsHub npx skills find test)"
     ]
   }
 }

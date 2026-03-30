@@ -1,0 +1,90 @@
+{
+  "$schema": "https://skills.sh/schemas/index.json",
+  "version": "1.0.0",
+  "name": "skillsHub",
+  "description": "自定义技能仓库 - 支持投票和分类功能",
+  "source": "https://gitee.com/ai-coding-id/skillsHub",
+  "skills": [
+    {
+      "name": "code-review",
+      "path": "skills/code-review/SKILL.md",
+      "description": "Conduct thorough, constructive code reviews for quality and security. Use when reviewing pull requests, checking code quality, identifying bugs, or auditing security.",
+      "category": "utility",
+      "votes": 0
+    },
+    {
+      "name": "debugging",
+      "path": "skills/debugging/SKILL.md",
+      "description": "Systematically debug code issues using proven methodologies. Use when encountering errors, unexpected behavior, or performance problems.",
+      "category": "utility",
+      "votes": 0
+    },
+    {
+      "name": "git-workflow",
+      "path": "skills/git-workflow/SKILL.md",
+      "description": "Manage Git workflows including commits, branches, merges, and collaboration. Use when working with Git repositories.",
+      "category": "utility",
+      "votes": 0
+    },
+    {
+      "name": "python",
+      "path": "skills/python/SKILL.md",
+      "description": "Python development guidelines and best practices. Use when working with Python code.",
+      "category": "development",
+      "votes": 0
+    },
+    {
+      "name": "security-review",
+      "path": "skills/security-review/SKILL.md",
+      "description": "Security code review for vulnerabilities. Use when asked to security review, find vulnerabilities, or audit security.",
+      "category": "development",
+      "votes": 0
+    },
+    {
+      "name": "frontend-design",
+      "path": "skills/frontend-design/SKILL.md",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use when building web components, pages, or applications.",
+      "category": "design",
+      "votes": 0
+    },
+    {
+      "name": "test-driven-development",
+      "path": "skills/test-driven-development/SKILL.md",
+      "description": "Use when implementing any feature or bugfix, before writing implementation code.",
+      "category": "testing",
+      "votes": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "utility",
+      "name": "实用工具",
+      "description": "通用辅助工具"
+    },
+    {
+      "id": "development",
+      "name": "开发辅助",
+      "description": "编程开发相关"
+    },
+    {
+      "id": "testing",
+      "name": "测试相关",
+      "description": "测试框架和工具"
+    },
+    {
+      "id": "deployment",
+      "name": "部署运维",
+      "description": "CI/CD、容器、云服务"
+    },
+    {
+      "id": "documentation",
+      "name": "文档生成",
+      "description": "README、文档工具"
+    },
+    {
+      "id": "design",
+      "name": "UI/UX 设计",
+      "description": "界面设计和无障碍"
+    }
+  ]
+}
